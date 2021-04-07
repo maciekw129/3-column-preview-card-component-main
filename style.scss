@@ -85,6 +85,7 @@ $headersFont: 'Big Shoulders Display';
 
     &__paragraph {
         line-height: 1.5rem;
+        margin-bottom: 4rem;
     }
     
 }
@@ -99,6 +100,7 @@ $headersFont: 'Big Shoulders Display';
     font-family: $primaryFont;
     cursor: pointer;
     margin-top: auto;
+    transition: opacity 0.2s linear;
 
     &--sedanColor {
         color: $sedanColor;
@@ -115,7 +117,7 @@ $headersFont: 'Big Shoulders Display';
 
 .button:hover {
     opacity: 30%;
-    transition: opacity 0.1s linear;
+    transition: opacity 0.2s linear;
 }
 
 .attribution {

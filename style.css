@@ -90,6 +90,7 @@
 
 .section__paragraph {
   line-height: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .button {
@@ -102,6 +103,8 @@
   font-family: "Lexend Deca", sans-serif;
   cursor: pointer;
   margin-top: auto;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 
 .button--sedanColor {
@@ -118,8 +121,8 @@
 
 .button:hover {
   opacity: 30%;
-  -webkit-transition: opacity 0.1s linear;
-  transition: opacity 0.1s linear;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 
 .attribution {
