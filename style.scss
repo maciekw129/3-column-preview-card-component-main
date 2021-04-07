@@ -1,0 +1,125 @@
+/* COLORS */
+$primaryColor: hsl(0, 0%, 95%);
+$fontColor: hsla(0, 0%, 100%, 0.75);
+$sedanColor: hsl(31, 77%, 52%);
+$suvColor: hsl(184, 100%, 22%);
+$luxuryColor: hsl(179, 100%, 13%);
+$blackColor: #000000;
+
+/* FONTS */
+$primaryFont: 'Lexend Deca', sans-serif;
+$headersFont: 'Big Shoulders Display';
+
+/* STYLES */
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $primaryColor;
+    font-family: $primaryFont;
+    font-size: 15px;
+    color: $fontColor;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .body {
+        height: auto;
+    }
+
+}
+
+.main {
+    display: flex;
+    border-radius: 5px;
+    width: 70%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .main {
+       flex-direction: column;
+       margin: 3rem 0;
+   }
+
+}
+
+@media only screen and (max-width: 465px) {
+
+    .main {
+        width: 85%;
+    }
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3rem;
+
+    &--sedanColor {
+        background-color: $sedanColor;
+    }
+
+    &--suvColor {
+        background-color: $suvColor;
+    }
+
+    &--luxuryColor {
+        background-color: $luxuryColor;
+    }
+
+    &__header {
+       font-family: $headersFont;
+       color: $primaryColor;
+       font-size: 200%;
+    }
+
+    &__paragraph {
+        line-height: 1.5rem;
+    }
+    
+}
+
+.button {
+    background-color: $primaryColor;
+    border: none;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-family: $primaryFont;
+    cursor: pointer;
+    margin-top: auto;
+
+    &--sedanColor {
+        color: $sedanColor;
+    }
+
+    &--suvColor {
+        color: $suvColor;
+    }
+
+    &--luxuryColor {
+        color: $luxuryColor;
+    }
+}
+
+.button:hover {
+    opacity: 30%;
+    transition: opacity 0.1s linear;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    color: $blackColor;
+}

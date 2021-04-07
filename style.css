@@ -1,0 +1,130 @@
+/* COLORS */
+/* FONTS */
+/* STYLES */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .body {
+    height: auto;
+  }
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  width: 70%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .main {
+    width: 85%;
+  }
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+}
+
+.section--sedanColor {
+  background-color: #e38826;
+}
+
+.section--suvColor {
+  background-color: #006970;
+}
+
+.section--luxuryColor {
+  background-color: #004241;
+}
+
+.section__header {
+  font-family: "Big Shoulders Display";
+  color: #f2f2f2;
+  font-size: 200%;
+}
+
+.section__paragraph {
+  line-height: 1.5rem;
+}
+
+.button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.button--sedanColor {
+  color: #e38826;
+}
+
+.button--suvColor {
+  color: #006970;
+}
+
+.button--luxuryColor {
+  color: #004241;
+}
+
+.button:hover {
+  opacity: 30%;
+  -webkit-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
